@@ -13,6 +13,11 @@ spec:
       containers:
       - name: kik
         image: aliayubkhan/susi_kikbot:latest
+        env:
+        - name: API_KEY
+          value: "bd4e1bb8-af35-4f3e-a7ca-8c35199145cb"
+        - name: BASE_URL
+          value: "https://susi-kikbot.tk/"
         ports:
         - containerPort: 8080
           protocol: TCP

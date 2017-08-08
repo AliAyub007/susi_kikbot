@@ -4,8 +4,8 @@ var susi= require('./susi.js')
 
 var bot = new Bot({
     username: 'susi_bot',
-    apiKey: process.env.API_KEY,
-    baseUrl: process.env.HEROKU_URL
+    apiKey: process.env.API_KEY || config.API_KEY,
+    baseUrl: process.env.BASE_URL || config.BASE_URL
 });
 
 setInterval(function() {
