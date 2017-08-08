@@ -21,4 +21,4 @@ bot.onTextMessage((message) => {
 });
 
 
-http.createServer(bot.incoming()).listen(process.env.PORT||5000)
+http.createServer(bot.incoming()).listen(process.env.PORT || 8080)

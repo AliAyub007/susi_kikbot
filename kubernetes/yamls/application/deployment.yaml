@@ -1,0 +1,22 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: kik
+  namespace: kik
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: kik
+    spec:
+      containers:
+      - name: kik
+        image: aliayubkhan/susi_kikbot:latest
+        ports:
+        - containerPort: 8080
+          protocol: TCP
+        envFrom:
+        - configMapRef:
+            name: kik
+      restartPolicy: Always
