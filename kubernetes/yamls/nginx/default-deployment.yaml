@@ -1,17 +1,17 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: default-http-backend
+  name: default-http-backend1
   namespace: nginx-ingress2
 spec:
   replicas: 1
   template:
     metadata:
       labels:
-        app: default-http-backend
+        app: default-http-backend1
     spec:
       containers:
-      - name: default-http-backend
+      - name: default-http-backend1
         image: gcr.io/google_containers/defaultbackend:1.0
         livenessProbe:
           httpGet:
