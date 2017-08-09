@@ -9,10 +9,10 @@ metadata:
 spec:
   tls:
   - hosts:
-    - susi-kikbot.tk
+    - susi-kik.tk
     secretName: kik-tls
   rules:
-  - host: susi-kikbot.tk
+  - host: susi-kik.tk
     http:
       paths:
       - path: /
