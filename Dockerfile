@@ -13,4 +13,3 @@ COPY . /usr/src/app
 
 EXPOSE 8080
 CMD [ "npm", "start" ]
-CMD exec /bin/bash -c "trap : TERM INT; sleep infinity & wait"
