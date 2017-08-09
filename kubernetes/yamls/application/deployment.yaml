@@ -20,8 +20,4 @@ spec:
           value: "https://susi-kikbot.tk/"
         ports:
         - containerPort: 8080
-          protocol: TCP
-        envFrom:
-        - configMapRef:
-            name: kik
-      restartPolicy: Always
+        
