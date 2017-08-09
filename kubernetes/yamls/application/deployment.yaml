@@ -13,6 +13,11 @@ spec:
       containers:
       - image: aliayubkhan/susi_kikbot:latest
         imagePullPolicy: Always
+        env:
+        - name: API_KEY
+          value: "0c82af7e-9b27-4b76-81fe-daa499ce8b5f"
+        - name: BASE_URL
+          value: "https://susi-kik.tk/"
         name: kik
         ports:
         - containerPort: 8080
