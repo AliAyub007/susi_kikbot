@@ -1,5 +1,5 @@
 apiVersion: extensions/v1beta1
-kind: kik
+kind: Ingress
 metadata:
   name: kik
   namespace: kik
