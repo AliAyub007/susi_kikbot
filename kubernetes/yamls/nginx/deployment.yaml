@@ -11,7 +11,7 @@ spec:
         app: nginx2
     spec:
       containers:
-      - image: quay.io/aledbf/nginx-ingress-controller:0.132
+      - image: gcr.io/google_containers/nginx-ingress-controller:0.8.3
         name: nginx2
         imagePullPolicy: Always
         env:
